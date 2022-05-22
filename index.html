@@ -21,6 +21,7 @@
         <div id="dataViz1">
             <div id="chart"></div>
             <div class="description1">
+                <h3>Introduction</h3>
                 <div>India's government is a constitutional republic. After gaining independence in 1947, the parliamentary system of government was instated. </div>
                 <div> --------- </div>
                 <div>Within this parliament, the lower house, Lok Sabha, functions similarly to the American House of Representatives, with members being voted by the Indian people.</div>
@@ -28,10 +29,10 @@
                 <div>This data visualisation analyzes the female representation within the Lok Sabha to comment on gender equality in the country.</div>
             </div>
             <div class="description2">
-
+                <h3>Overall Percentage of Women</h3>
                 <div>Hover over each circle to see information on each individual member of Parliament.</div>
                 <div> --------- </div>
-                <div>Pink represents female members, while blue represents male.</div>
+                <div>Pink represents female members, while blue represents male. You can see each members names, ages, the party they are affiliated with, as well as the state they represent.</div>
 
             </div>
             <div class="description3">
@@ -39,7 +40,8 @@
                 <div> --------- </div>
                 <div>There is only 15% of women in parliament.</div>
                 <div> --------- </div>
-                <div>It's important to keep in mind that this version of Parliament was formed through general elections held in 2019.</div>
+                <div>It's important to keep in mind that this version of Parliament was formed through general elections held in 2019. While this figure reflects a significant lack in gender equality, it's comparable to the overall percentage of female politicians
+                    in the American House of Representatives in 2018 - 20%.</div>
 
             </div>
             <div id="congressMemberInfo" class="card">
@@ -58,19 +60,37 @@
         <div id="dataViz2" class="hidden">
             <div id="chart2"></div>
             <div class="description4">
+                <h3>Representation by Affiliated Party</h3>
                 <div>Now we are going to take a look at what the female representation by political party looks like</div>
                 <div> --------- </div>
                 <!-- <hr /> -->
-                <div>There are 36 number of parties in the Lok Sabha</div>
+                <div>There are 36 unique parties in the Lok Sabha</div>
                 <div> --------- </div>
                 <div>Of the 540 members of parliament, 302 individuals are affiliated with the BJP, 54 are from the INC, and the other 184 form small percentages of smallers parties.</div>
+                <div> --------- </div>
+                <div> In terms of sheer numbers it's clear that the BJP has a massive hold over the Lok Sabha. But, we can measure the gender equality within each party by comparing the percentage of women found in each. </div>
             </div>
         </div>
 
         <div id="dataViz3" class="hidden">
             <div id="chart3"></div>
             <div class="description5">
+                <div>Looking at the percentages themselves tells us a much different story. Even though the BJP is the majority party, women make up a measly 13.9% of seats. Smaller parties like the All India Trinamool Congress (with 22 total members) have
+                    a much higher percentage at 40.9%. </div>
                 <div> --------- </div>
+                <div>Many parties are only represented by 1 male politician, which is account for an absent bar.</div>
+                <div> --------- </div>
+                <div>The most intruiging statistic seems to be that the two most popular parties (the INC and BJP) have similar percentages of women despite a huge gap in numbers.</div>
+                <div> --------- </div>
+                <div>While politics in India are more nuanced than the partisan system in the US, the Congress Party has traditionally support secular policy while encouraging equal rights for all citizens, even those in the lower castes (Britannica).</div>
+                <div> --------- </div>
+                <div>This suggests that the Congress party falls onto the liberal side of the political spectrum, accounting for the more gender equal population they hold in parliament. </div>
+            </div>
+
+            <div class="description6">
+                <div>Hopefully these graphs and interactive figures can help you understand how India approach gender equality and can inspire you to do more research regarding this subject.</div>
+                <div> --------- </div>
+                <div>If I were to continue this further I would want to analyze how caste/education affects gender representation.</div>
             </div>
         </div>
 
@@ -95,10 +115,10 @@
                 hH = $('#dataViz2').outerHeight(),
                 wH = $(window).height(),
                 wS = $(this).scrollTop();
-            if (wS <= 1850) {
+            if (wS <= 2050) {
                 hideAll();
                 $("#dataViz1").addClass("reveal");
-            } else if (wS <= 3000) {
+            } else if (wS <= 3500) {
                 hideAll();
                 console.log("aa", wS);
                 $("#dataViz2").addClass("reveal");

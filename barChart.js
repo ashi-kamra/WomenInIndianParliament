@@ -76,7 +76,7 @@ function barChart() {
             .append("rect")
             .attr("class", "bar")
             .attr("x", d => x(d.name))
-            .attr("width", 40) //x.bandwidth())
+            .attr("width", 15) //x.bandwidth())
             .attr("y", d => y(d.count)) //how to get the number of people in each party
             .attr("height", d => height - y(d.count))
             .attr("fill", function(d, i) { return colors(i) })

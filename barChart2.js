@@ -54,7 +54,7 @@ function barChart2() {
         }
 
         for (const party of parties) {
-            party.percentW = (party.numWomen - 1) / party.count;
+            party.percentW = (party.numWomen) / party.count;
         }
         console.log("per", parties)
 
@@ -86,7 +86,7 @@ function barChart2() {
             .append("rect")
             .attr("class", "bar")
             .attr("x", d => x(d.name))
-            .attr("width", 40) //x.bandwidth())
+            .attr("width", 15) //x.bandwidth())
             .attr("y", d => y((+d.percentW))) //how to get the number of people in each party
             .attr("height", d => height - y((+d.percentW)))
             .attr("fill", function(d, i) { return colors(i) })
