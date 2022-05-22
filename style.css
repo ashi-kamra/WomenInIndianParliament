@@ -2,8 +2,131 @@ html,
 body {
     margin: 0;
     padding: 0;
+    /* font-family: "Helvetica Neue", sans-serif; */
 }
 
 canvas {
     display: block;
 }
+
+
+/* DATA VIZ 1 */
+
+#words {
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#chart {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    bottom: 40px;
+    left: 0;
+}
+
+.description1 {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 400px;
+}
+
+.description1 div {
+    width: 350px;
+}
+
+.description2 {
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-bottom: 675px;
+}
+
+.description2 div {
+    width: 350px;
+}
+
+.description3 {
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-bottom: 705px;
+}
+
+.description3 div {
+    width: 350px;
+}
+
+#congressMemberInfo {
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    text-align: left;
+    width: 350px;
+}
+
+.hidden {
+    transition: opacity 1s ease-in;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.description4 {
+    padding-top: 200px;
+    padding-left: 20px;
+    padding-bottom: 600px;
+}
+
+.description4 div {
+    width: 350px;
+}
+
+
+/* DATA VIZ 1 */
+
+
+/* DATA VIZ 2 */
+
+.reveal {
+    transition: opacity 1s ease-in;
+    opacity: 100;
+}
+
+#chart2 {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    bottom: 0px;
+    left: 375px;
+    padding-bottom: 600px;
+}
+
+
+/* DATA VIZ 2 */
+
+
+/* DATA VIZ 3 */
+
+.description5 {
+    padding-top: 200px;
+    padding-left: 20px;
+    padding-bottom: 600px;
+}
+
+.description5 div {
+    width: 350px;
+}
+
+#chart3 {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    bottom: 0px;
+    left: 375px;
+    padding-bottom: 100px;
+}
+
+
+/* DATA VIZ 3 */
